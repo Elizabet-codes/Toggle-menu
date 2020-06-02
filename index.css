@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+.container{
+  width:400px;
+ margin:70px auto;
+  background-color: azure;
+  box-shadow: -9px 9px 33px -2px rgba(0,0,0,0.75);
+  padding:10px;
+    
+}
+.question-title{
+    font-size:20px;
+}
+.question-answer p{
+    font-size:22px;
+}
+ .question-answer{
+    display:none;
+} 
+
+.question-btn{
+    outline:none;
+    border:none;
+    background-color: rgb(157, 157, 209);
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size:20px;
+    padding:0 40px;
+    border: 4px dashed #ff6550;
+
+   
+}
+.click{
+    animation:shake 2s ease-in;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(115deg) scale(0.9) translate(66px,-24px);
+    }
+    50%{
+        transform: rotate(71deg) scale(0.9) translate(66px,-24px);
+    }
+}
+
+.show-text .question-answer{
+    display:block;
+    
+}
+
+.close{
+    display:none;
+}
+
+
+.show-text .close{
+    display:inline;
+   
+
+}
+
+ .show-text .click{
+    display:none;
+} 
+
+@media(max-width:440px){
+    .container{
+        width:400px;
+    }
+    .question-title{
+        font-size:15px;
+    }
+    .question-answer p{
+        font-size:16px;
+    }
+}
